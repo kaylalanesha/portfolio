@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a.active,
+.sidebar nav ul li a:hover {
+    background-color: #00b8d4;
+    color: #ffffff;
+}
+
+.theme-toggle button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.main-content header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #000;
+}
+
+.main-content header p {
+    margin: 5px 0 20px;
+    color: #555;
+}
+
+.quick-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.quick-actions .action {
+    background-color: #00b8d4;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 35px;
+    flex: 1;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quick-actions .action:hover {
+    background-color: #0097a7;
+}
+
+.chat-box {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.chat-box .send-button {
+    background-color: #00b8d4;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.project-list {
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.project-list h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.project-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list ul li {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #555;
+}

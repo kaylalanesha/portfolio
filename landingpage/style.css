@@ -1,0 +1,285 @@
+/*Estilo geral*/
+ body{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 500;
+    box-sizing: border-box;
+    background-color: grey;
+
+}
+
+header{
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+#titulo{
+flex-direction: column;
+line-height: 10px;
+
+}
+h1{
+  font-weight: 200; 
+}
+
+header ul a {
+    color: inherit;
+    text-decoration: none;  
+}
+header{
+    position: fixed;
+    max-width: 1200px;
+    z-index: 9999;
+    top: 0;
+}
+
+ ul li{
+   
+  display: inline-block;  
+  margin: 30px;
+  filter: brightness(1.0);/*aumenta a luz ou o brilho do botao*/
+}
+  ul li:hover{
+cursor: pointer;
+color: #f5c654;
+transition: 0.3s all;
+}
+/*Estilo do desenvolvimento*/
+main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:80px;   
+}
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    flex-direction: column;
+}
+span{
+    color: #f5c654;
+}
+p{
+    line-height:20px ;
+}
+/* define os espacos entre os paragrafos */
+p +p {
+    margin-top: -10px;
+}
+h3{
+    font-size: 56px;
+    line-height: 10px;
+}
+img {
+
+  padding: 0;
+    width: 400px;
+    /* largura do contêiner */
+    height: 400px;
+    margin-top: 05vh;
+    /* altura do contêiner */
+    position: relative;
+    clip-path: polygon(25% 6.7%,
+            75% 6.7%,
+            100% 50%,
+            75% 93.3%,
+            25% 93.3%,
+            0% 50%);
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+/* aplicar o efeito flutuante na imagem*/
+ @keyframes flutuar  {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+ 
+} 
+
+/*Estilo do Rodape*/
+
+footer{
+    
+margin-top: 10vh;
+    size: 150px;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px 0 ;
+}
+.borda{
+    padding: 10px;
+    border-top: 2px solid #f5c654;
+}
+ footer .line-footer p i{
+    color: #f5c654; /* Amarelo vibrante com leve transparência */
+   font-size: 22px;
+}
+footer .line-footer p a{
+color: #fff;
+}
+.butao-rede-social button {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   border: none;
+   background-color: #f5c654;
+   font-size: 20px;
+   cursor: pointer;
+   margin: 0 8px;
+   transition: .2s;
+}
+footer{
+    overflow: hidden;
+    height: auto;
+}
+/* ESTILIZACAO DO btn-menu */
+#btn-menu {
+    width: 50px; /* Tamanho do quadrado */
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent; /* ou a cor desejada */
+    border: 2px solid white; /* borda do quadrado */
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+#btn-menu .linha {
+    width: 100%;
+    height: 4px; /* altura das linhas */
+    background-color: white; /* cor das linhas */
+    border-radius: 2px; /* arredondamento das linhas */
+    transition: 0.3s;
+}
+
+/*para deixar responsivo*/
+@media (max-width:1100px){
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: grey;
+  color: white;
+  margin-top: 0 auto;
+  font-weight: 100;
+}   
+#tiulo{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+h2{
+    font-size: 20px;
+    flex-direction: row;
+}
+p{
+    line-height: 20px;
+    font-size: 20px;
+}
+h3{
+    font-size: 30px;
+    padding: 15px; 
+}
+form{
+    margin: 0 auto;
+width: 100%;
+}
+input{
+  align-self: center;
+
+}
+img{
+margin-top: 05vh;
+width: 300px;
+/* largura do contêiner */
+height: 300px;
+}
+footer {
+    margin-top: 10vh;
+}
+  ul li {
+    display: none;
+
+ }
+ .menu-mobile.abrir{
+    visibility: visible;
+    height: calc(100vh-78px);
+    opacity: 1;
+ }
+ #btn-menu{
+    display: block;
+    width: 50px; /* Tamanho do quadrado */
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent; /* ou a cor desejada */
+    border: 2px solid white; /* borda do quadrado */
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+ #btn-menu .linha {
+    width: 100%;
+    height: 4px; /* altura das linhas */
+    background-color: white; /* cor das linhas */
+    border-radius: 2px; /* arredondamento das linhas */
+    transition: 0.1s;
+}
+
+}
+
+/* ESTILIZACAO DO  menu-mobile */
+.menu-mobile{
+      position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    list-style: none;
+    margin: 0;
+    visibility: hidden;
+    transition: 0.5s ;
+   
+}
+.menu-mobile  a {
+    background-color: gray;
+  text-decoration: none;
+  color: inherit;
+  color: white;
+  display: block;
+  font-size: 18pt;
+  padding: 20px 30px;
+}
+.menu-mobile :hover{
+    background-color: #f5c654;
+}
+
+
+
+
+
+
