@@ -93,9 +93,12 @@ header nav.menu-desktop ul li {
 
 /* ESTILO DO MENU MOBILE */
 
-/* .btn-abrir-menu{
+ .btn-abrir-menu{
     display: none;
-} */
+} 
+.menu-mobile{
+    display: block;
+}
 
 .btn-abrir-menu i{
     color:  #f5c654; 
@@ -457,6 +460,14 @@ footer .line-footer p a {
     /* ESPECIALIDADES */
     section.especiliadades {
         padding: 40px 8%;
+    }
+     /* menu-mobile*/
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    .menu-desktop {
+        display: none;
     }
 
     /* SOBRE */
